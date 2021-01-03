@@ -1,0 +1,14 @@
+{
+  "name": "alef-gym",
+  "version": "1.0.0",
+  "description": "Landing page for Alefgym",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ali Qorbanzade",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
