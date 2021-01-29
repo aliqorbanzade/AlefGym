@@ -11,8 +11,37 @@ body {
     box-sizing: border-box;
 
     /* background-color: #000424; */
+
+    padding: 3rem;
+
+    @include respond(tab-port){
+        padding:0 ;
+    }
+
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; //1rem = 10 px 10-16 = 62.5%
+
+    // @include respond-phone{
+    //     font-size: 50%;
+    // }
+
+    
+    @include respond(tab-land){ //w < 1200
+        font-size: 56.25%; 
+    }
+    
+    @include respond(tab-port){ //w < 600
+        font-size: 50%; // 1rem=10px i want to be 8 px >> 8/16 = 50%
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+}
+
+::selection{
+    background-color: $color-primary;
+    color: white;
 }
